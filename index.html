@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | mmirzafahlefi</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/output.css" />
+    <script>
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+  </head>
+
+  <body class="dark:bg-dark">
+    <!-- Header start -->
+    <header
+      class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent"
+    >
+      <div class="container">
+        <div class="relative flex items-center justify-between">
+          <div class="px-4">
+            <a href="#home" class="block py-6 text-lg font-bold text-primary"
+              >mmirzafahlefi</a
+            >
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="absolute right-4 block lg:hidden"
+            >
+              <span
+                class="hamburger-line origin-top-left transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"
+              ></span>
+            </button>
+
+            <nav
+              id="nav-menu"
+              class="absolute right-4 top-full hidden w-full max-w-[250px] dark:bg-dark dark:shadow-slate-500 rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="mx-8 flex py-2 text-base font-semibold text-dark group-hover:text-primary dark:text-white"
+                    >Home</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="mx-8 flex py-2 text-base font-semibold text-dark group-hover:text-primary dark:text-white"
+                    >About</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#portfolio"
+                    class="mx-8 flex py-2 text-base font-semibold text-dark group-hover:text-primary dark:text-white"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#contact"
+                    class="mx-8 flex py-2 text-base font-semibold text-dark group-hover:text-primary dark:text-white"
+                    >Contact</a
+                  >
+                </li>
+                <li class="mt-3 flex items-center pl-8 lg:mt-0">
+                  <div class="flex">
+                    <span class="mr-2 text-sm text-slate-500">light</span>
+                    <input type="checkbox" class="hidden" id="dark-toggle" />
+                    <label for="dark-toggle">
+                      <div
+                        class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1"
+                      >
+                        <div
+                          class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"
+                        ></div>
+                      </div>
+                    </label>
+                    <span class="ml-2 text-sm text-slate-500">dark</span>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- Hero section start -->
+    <section id="home" class="pt-36 sec">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <!-- Left -->
+          <div class="w-full self-center px-4 lg:w-1/2">
+            <h1 class="text-base font-semibold text-primary md:text-xl">
+              Hi There 👋, I'am
+              <span class="block font-bold text-dark text-4xl dark:text-white"
+                >Muhammad Mirza Fahlefi</span
+              >
+            </h1>
+            <h2 class="font-bold text-secondary text-lg mb-5 lg:text-2xl">
+              Graphic Designer
+            </h2>
+            <p class="font-medium text-secondary mb-10 leading-relaxed">
+              Efficiency, effectiveness and guaranteed success – not just
+              buzzwords, but also the pillars on which I build every project
+            </p>
+
+            <a
+              href="#"
+              class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+              >Contact Me</a
+            >
+          </div>
+
+          <!-- Right -->
+          <div class="w-full self-end px-4 lg:w-1/2">
+            <div class="relative mt-10 lg:mt-0 right-0">
+              <img
+                src="src/image/profile2.png"
+                alt=""
+                class="max-w-full mx-auto"
+              />
+              <span
+                class="lg:py-3 lg:px-7 py-2 px-5 text-sm bg-white rounded-r-[10px] rounded-tl-[10px] font-bold right-4 lg:right-6 bottom-3 lg:bottom-5 absolute italic"
+                >Graphic Designer</span
+              >
+
+              <span
+                class="lg:py-3 lg:px-7 py-2 px-5 bg-white rounded-l-[10px] rounded-tr-[10px] font-bold left-4 lg:left-6 bottom-24 lg:bottom-32 absolute italic"
+                >Web Development</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero section end -->
+
+    <!-- About section start -->
+    <section id="about" class="pt-36 pb-32 sec">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-10 lg:w-1/2">
+            <h4 class="font-bold uppercase text-primary text-lg mb-3">
+              about me
+            </h4>
+            <h2
+              class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl dark:text-white"
+            >
+              a little of my profile.
+            </h2>
+            <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">
+              I am a self-motivated Graphic Designer with a verifiable track
+              record of over five years!! my motto is Efficiency, effectiveness
+              and guaranteed success – not just buzzwords, but also the pillars
+              on which I build every project.
+            </p>
+          </div>
+
+          <div class="w-full px-4 lg:w-1/2">
+            <h3
+              class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10 dark:text-white"
+            >
+              let's be friends.
+            </h3>
+            <p class="font-medium text-base text-secondary mb-6 lg:text-lg">
+              You can visit and send messages to me via my social media below
+              and don't forget to follow me. Thank You.
+            </p>
+            <div class="flex items-center">
+              <a
+                href=""
+                class="dark:text-white w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                ><i class="bx bxl-instagram lg:mt-1"></i
+              ></a>
+              <a
+                href=""
+                class="dark:text-white w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                ><i class="bx bxl-facebook lg:mt-1"></i
+              ></a>
+              <a
+                href=""
+                class="dark:text-white w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                ><i class="bx bxl-whatsapp lg:mt-1"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About section end -->
+
+    <!-- Portfolio section start -->
+    <section id="portfolio" class="pt-36 pb-32 sec">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 lg:w-1/2">
+            <h4 class="font-bold uppercase text-primary text-lg mb-3">
+              Portfolio
+            </h4>
+            <h2
+              class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl dark:text-white"
+            >
+              Project terbaru
+            </h2>
+          </div>
+
+          <div class="w-full px-4 lg:w-1/2">
+            <div class="flex items-center mb-10 lg:justify-end lg:pt-10">
+              <span
+                class="portfolio-item hover:text-primary active-portfolio"
+                data-filter="all"
+                >All</span
+              >
+              <span class="portfolio-item hover:text-primary" data-filter=".web"
+                >Web</span
+              >
+              <span
+                class="portfolio-item hover:text-primary"
+                data-filter=".landing-page"
+                >Landing Page</span
+              >
+              <span
+                class="portfolio-item hover:text-primary"
+                data-filter=".design"
+                >Design</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="flex w-full flex-wrap px-4 xl:mx-auto portfolio-container"
+          >
+            <div class="mb-12 p-4 md:w-1/3 portfolio-content mix web">
+              <div class="overflow-hidden rounded-md shadow-md">
+                <img
+                  src="src/image/portfolio/1.jpg"
+                  alt="Landing Page"
+                  width="w-full"
+                />
+              </div>
+              <h3
+                class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white"
+              >
+                Landing Page
+              </h3>
+              <p class="text-base font-medium text-secondary">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius,
+                iusto! Aliquam, corporis.
+              </p>
+            </div>
+            <div class="mb-12 p-4 md:w-1/3 portfolio-content mix web">
+              <div class="overflow-hidden rounded-md shadow-md">
+                <img
+                  src="src/image/portfolio/2.jpg"
+                  alt="E-Commerce"
+                  width="w-full"
+                />
+              </div>
+              <h3
+                class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white"
+              >
+                E-Commerce
+              </h3>
+              <p class="text-base font-medium text-secondary">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius,
+                iusto! Aliquam, corporis.
+              </p>
+            </div>
+            <div class="mb-12 p-4 md:w-1/3 portfolio-content mix design">
+              <div class="overflow-hidden rounded-md shadow-md">
+                <img
+                  src="src/image/portfolio/3.jpg"
+                  alt="Technical Documentation"
+                  width="w-full"
+                />
+              </div>
+              <h3
+                class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white"
+              >
+                Technical Documentation
+              </h3>
+              <p class="text-base font-medium text-secondary">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius,
+                iusto! Aliquam, corporis.
+              </p>
+            </div>
+            <div class="mb-12 p-4 md:w-1/3 portfolio-content mix landing-page">
+              <div class="overflow-hidden rounded-md shadow-md">
+                <img
+                  src="src/image/portfolio/4.jpg"
+                  alt="Tribute Page"
+                  width="w-full"
+                />
+              </div>
+              <h3
+                class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white"
+              >
+                Tribute Page
+              </h3>
+              <p class="text-base font-medium text-secondary">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius,
+                iusto! Aliquam, corporis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio section end -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="pt-32 pb-32 sec">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-10 lg:w-1/2">
+            <h4 class="font-bold uppercase text-primary text-lg mb-3">
+              Contact me
+            </h4>
+          </div>
+        </div>
+
+        <form>
+          <div class="w-full lg:mx-auto">
+            <div class="flex flex-wrap">
+              <div class="mb-8 w-1/2 px-4">
+                <label for="name" class="text-base font-bold text-primary"
+                  >Nama</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+                />
+              </div>
+              <div class="mb-4 w-1/2 px-4">
+                <label for="email" class="text-base font-bold text-primary"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+                />
+              </div>
+            </div>
+            <div class="mb-4 w-full px-4">
+              <label for="message" class="text-base font-bold text-primary"
+                >Pesan</label
+              >
+              <textarea
+                type="email"
+                id="email"
+                class="h-32 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+              ></textarea>
+            </div>
+            <div class="px-4">
+              <button
+                class="rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg"
+              >
+                Kirim
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Start -->
+    <footer class="pt-10 bg-dark">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 lg:w-1/2">
+            <h4 class="font-medium text-secondary text-lg mb-3">
+              &copy; 2024 mmirzafahlefi.
+            </h4>
+          </div>
+
+          <div class="w-full px-4 lg:w-1/2 mb-8">
+            <div class="flex items-center lg:justify-end">
+              <a
+                href=""
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary text-white"
+                ><i class="bx bxl-instagram lg:mt-1"></i
+              ></a>
+              <a
+                href=""
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary text-white"
+                ><i class="bx bxl-facebook lg:mt-1"></i
+              ></a>
+              <a
+                href=""
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary text-white"
+                ><i class="bx bxl-whatsapp lg:mt-1"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Back to top Start -->
+    <a
+      href="#home"
+      class="fixed bottom-4 right-4 z-[9999] hidden h-10 w-10 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse"
+      id="to-top"
+    >
+      <i class="bx bx-up-arrow-alt text-lg font-medium text-white"></i>
+    </a>
+    <!-- Back to top End -->
+
+    <script src="src/js/mixitup.min.js"></script>
+    <script src="src/js/script.js"></script>
+  </body>
+</html>
