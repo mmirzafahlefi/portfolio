@@ -1,0 +1,32 @@
+{
+    "portfolio": [
+        {
+            "image": "1.jpg",
+            "judul": "Landing Page",
+            "deskripsi": "Lorem ipsum dolor sit amet consectetur adipisicing elit Eius, iusto! Aliquam, corporis.",
+            "kategori": "design",
+            "link": "https://mmirzafahlefi.netlify.app"
+        },
+        {
+            "image": "2.jpg",
+            "judul": "Landing Page",
+            "deskripsi": "Lorem ipsum dolor sit amet consectetur adipisicing elit Eius, iusto! Aliquam, corporis.",
+            "kategori": "book",
+            "link": "https://mmirzafahlefi.netlify.app"
+        },
+        {
+            "image": "3.jpg",
+            "judul": "Landing Page",
+            "deskripsi": "Lorem ipsum dolor sit amet consectetur adipisicing elit Eius, iusto! Aliquam, corporis.",
+            "kategori": "web",
+            "link": "https://mmirzafahlefi.netlify.app"
+        },
+        {
+            "image": "4.jpg",
+            "judul": "Landing Page",
+            "deskripsi": "Lorem ipsum dolor sit amet consectetur adipisicing elit Eius, iusto! Aliquam, corporis.",
+            "kategori": "design",
+            "link": "https://mmirzafahlefi.netlify.app"
+        }
+    ]
+}

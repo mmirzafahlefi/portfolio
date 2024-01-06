@@ -62,13 +62,98 @@ window.addEventListener("click", function (e) {
 });
 
 // mixit portfolio
-const mixer = mixitup(".portfolio-container", {
-  selectors: {
-    target: ".portfolio-content",
-  },
-  animation: {
-    duration: 400,
-  },
+// const mixer = mixitup(".portfolio-container", {
+//   selectors: {
+//     target: ".portfolio-content",
+//   },
+//   animation: {
+//     duration: 400,
+//   },
+// });
+
+// portfolio
+function tampildata() {
+  $.getJSON("src/js/data.json", function (data) {
+    let portfolio = data.portfolio;
+    $.each(portfolio, function (i, data) {
+      $(".portfolio-container").append(
+        `<div class="mb-12 p-4 md:w-1/3 portfolio-content mix ` +
+          data.kategori +
+          `">
+      <div class="overflow-hidden rounded-md shadow-md mb-5">
+        <img
+          src="src/image/portfolio/` +
+          data.image +
+          `"
+          alt="Landing Page"
+          width="w-full"
+        />
+      </div>
+      <a href="` +
+          data.link +
+          `" class="text-xl font-semibold text-dark dark:text-white" target="_blank"
+      >
+      ` +
+          data.judul +
+          `
+      </a>
+      <p class="mt-3 text-base font-medium text-secondary">
+      ` +
+          data.deskripsi +
+          `
+      </p>
+    </div>`
+      );
+    });
+  });
+}
+tampildata();
+
+$(".portfolio-item").on("click", function () {
+  let kategori = $(this).html();
+
+  if (kategori == "All") {
+    tampildata();
+    return true;
+  }
+
+  $.getJSON("src/js/data.json", function (data) {
+    let portfolio = data.portfolio;
+    let content = "";
+
+    $.each(portfolio, function (i, data) {
+      if (data.kategori == kategori.toLowerCase()) {
+        content +=
+          `<div class="mb-12 p-4 md:w-1/3 portfolio-content mix ` +
+          data.kategori +
+          `">
+    <div class="overflow-hidden rounded-md shadow-md mb-5">
+      <img
+        src="src/image/portfolio/` +
+          data.image +
+          `"
+        alt="Landing Page"
+        width="w-full"
+      />
+    </div>
+    <a href="` +
+          data.link +
+          `" class="text-xl font-semibold text-dark dark:text-white" target="_blank"
+    >
+    ` +
+          data.judul +
+          `
+    </a>
+    <p class="mt-3 text-base font-medium text-secondary">
+    ` +
+          data.deskripsi +
+          `
+    </p>
+  </div>`;
+      }
+    });
+    $(".portfolio-container").html(content);
+  });
 });
 
 /* Link active portfolio */
@@ -106,3 +191,11 @@ if (
 } else {
   darkToggle.checked = false;
 }
+
+// GSAP animation
+gsap.from(".home-image", { opacity: 0, duration: 2, delay: 0.5, x: 60 });
+gsap.from(".home-data", { opacity: 0, duration: 2, delay: 0.8, y: 25 });
+gsap.from(
+  ".home-title, .home-name, .home-profesi, .home-deskripsi, .home-btn",
+  { opacity: 0, duration: 2, delay: 1, y: 25, ease: "expo.out", stagger: 0.2 }
+);
