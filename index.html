@@ -138,8 +138,14 @@
 
             <a
               href="#"
-              class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out home-btn"
+              class="text-base mr-3 font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out home-btn"
               >Contact Me</a
+            >
+            <a
+              href="src/pdf/CV_Muhammad Mirza Fahlefi.pdf"
+              download="CV_Muhammad Mirza Fahlefi.pdf"
+              class="text-base font-semibold text-dark dark:text-white border-primary border-2 py-3 px-8 rounded-full hover:shadow-lg hover:bg-primary transition duration-300 ease-in-out home-btn"
+              >Download CV</a
             >
           </div>
 
@@ -158,7 +164,7 @@
 
               <span
                 class="lg:py-3 lg:px-7 py-2 px-5 bg-white rounded-l-[10px] rounded-tr-[10px] font-bold left-4 lg:left-6 bottom-24 lg:bottom-32 absolute italic"
-                >Web Development</span
+                >Book Layouter</span
               >
             </div>
           </div>
@@ -168,7 +174,7 @@
     <!-- Hero section end -->
 
     <!-- About section start -->
-    <section id="about" class="pt-36 pb-32">
+    <section id="about" class="pt-28 lg:pt-36">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full px-4 mb-10 lg:w-1/2">
@@ -217,7 +223,7 @@
             </div>
           </div>
 
-          <div class="w-full px-4 mb-10">
+          <div class="w-full px-4 mb-10 lg:w-1/2">
             <h2
               class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10 dark:text-white"
             >
@@ -327,13 +333,30 @@
               </span>
             </div>
           </div>
+
+          <div class="w-full px-4 mb-10 lg:w-1/2">
+            <h2
+              class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl lg:pt-10 dark:text-white"
+            >
+              work experience.
+            </h2>
+            <div>
+              <i class="bx bx-buildings text-dark dark:text-white text-4xl"></i>
+              <h2 class="text-dark dark:text-white text-xl lg:text-2xl">
+                Graphic Designer
+              </h2>
+              <p class="font-medium text-sm text-secondary max-w-xl lg:text-lg">
+                CV. Khalifah Mediatama
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <!-- About section end -->
 
     <!-- Portfolio section start -->
-    <section id="portfolio" class="pt-36 pb-32">
+    <section id="portfolio" class="pt-28 lg:pt-36">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full px-4 lg:w-1/2">
@@ -349,17 +372,28 @@
 
           <div class="w-full px-4 lg:w-1/2">
             <div class="flex items-center mb-10 lg:justify-end lg:pt-10">
-              <span class="portfolio-item hover:text-primary active-portfolio"
+              <span
+                class="portfolio-item hover:text-primary active-portfolio"
+                data-filter="all"
                 >All</span
               >
-              <span class="portfolio-item hover:text-primary">Web</span>
-              <span class="portfolio-item hover:text-primary">Book</span>
-              <span class="portfolio-item hover:text-primary">Design</span>
+              <span class="portfolio-item hover:text-primary" data-filter="web"
+                >Web</span
+              >
+              <span class="portfolio-item hover:text-primary" data-filter="book"
+                >Book</span
+              >
+              <span
+                class="portfolio-item hover:text-primary"
+                data-filter="design"
+                >Design</span
+              >
             </div>
           </div>
 
           <div
             class="flex w-full flex-wrap px-4 xl:mx-auto portfolio-container"
+            id="portfolio-container"
           >
             <!-- Portfolio -->
           </div>
@@ -369,7 +403,7 @@
     <!-- Portfolio section end -->
 
     <!-- Contact Section Start -->
-    <section id="contact" class="pt-32 pb-32">
+    <section id="contact" class="pt-28 pb-32 lg:pt-36">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full px-4 mb-10 lg:w-1/2">
@@ -379,26 +413,32 @@
           </div>
         </div>
 
-        <form>
+        <form
+          action="https://formspree.io/f/xgegebzr"
+          method="post"
+          accept-charset="UTF-8"
+        >
           <div class="w-full lg:mx-auto">
             <div class="flex flex-wrap">
-              <div class="mb-8 w-1/2 px-4">
+              <div class="mb-8 w-full lg:w-1/2 px-4">
                 <label for="name" class="text-base font-bold text-primary"
                   >Nama</label
                 >
                 <input
                   type="text"
                   id="name"
+                  name="Name"
                   class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
                 />
               </div>
-              <div class="mb-4 w-1/2 px-4">
+              <div class="mb-4 w-full lg:w-1/2 px-4">
                 <label for="email" class="text-base font-bold text-primary"
                   >Email</label
                 >
                 <input
                   type="email"
                   id="email"
+                  name="Email"
                   class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
                 />
               </div>
@@ -408,13 +448,14 @@
                 >Pesan</label
               >
               <textarea
-                type="email"
-                id="email"
+                name="Message"
+                id="message"
                 class="h-32 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
               ></textarea>
             </div>
             <div class="px-4">
               <button
+                type="submit"
                 class="rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg"
               >
                 Kirim
@@ -427,7 +468,7 @@
     <!-- Contact Section End -->
 
     <!-- Footer Start -->
-    <footer class="pt-10 bg-dark">
+    <footer class="pt-14 bg-dark">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full px-4 lg:w-1/2">
@@ -470,8 +511,9 @@
     </a>
     <!-- Back to top End -->
 
-    <script src="src/js/jquery.js"></script>
     <script src="src/js/gsap.min.js"></script>
+    <script src="src/js/mixitup.min.js"></script>
+    <script src="src/js/jquery.js"></script>
     <script src="src/js/script.js"></script>
   </body>
 </html>
