@@ -1007,28 +1007,16 @@ video {
   padding-left: 2rem;
 }
 
-.pt-32 {
-  padding-top: 8rem;
-}
-
-.pt-36 {
-  padding-top: 9rem;
+.pt-14 {
+  padding-top: 3.5rem;
 }
 
 .pt-28 {
   padding-top: 7rem;
 }
 
-.pt-24 {
-  padding-top: 6rem;
-}
-
-.pt-20 {
-  padding-top: 5rem;
-}
-
-.pt-14 {
-  padding-top: 3.5rem;
+.pt-36 {
+  padding-top: 9rem;
 }
 
 .text-2xl {
