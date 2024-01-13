@@ -1,6 +1,13 @@
 {
     "portfolio": [
         {
+            "image": "streamblog-thumbnail.jpg",
+            "judul": "StreamBlog Movie app",
+            "deskripsi": "Website ini dibuat menggunakan html, css, javascript, dan juga API dari TMDB",
+            "kategori": "web",
+            "link": "https://trakteer.id/mmirzafahlefi/showcase/streamblog-movie-app-qLX1q"
+        },
+        {
             "image": "1.jpg",
             "judul": "Landing Page",
             "deskripsi": "Lorem ipsum dolor sit amet consectetur adipisicing elit Eius, iusto! Aliquam, corporis.",
