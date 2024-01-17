@@ -1,6 +1,13 @@
 {
     "portfolio": [
         {
+            "image": "quranku.png",
+            "judul": "Quranku - Website baca Al-Qur'an",
+            "deskripsi": "Website ini dibuat menggunakan html, tailwind css, javascript, dan juga API",
+            "kategori": "web",
+            "link": "https://trakteer.id/mmirzafahlefi/showcase/quranku-aplikasi-baca-alquran-berbasis-website-P34wU"
+        },
+        {
             "image": "streamblog-thumbnail.jpg",
             "judul": "StreamBlog Movie app",
             "deskripsi": "Website ini dibuat menggunakan html, css, javascript, dan juga API dari TMDB",
@@ -8,32 +15,11 @@
             "link": "https://trakteer.id/mmirzafahlefi/showcase/streamblog-movie-app-qLX1q"
         },
         {
-            "image": "1.jpg",
-            "judul": "Landing Page",
-            "deskripsi": "Lorem ipsum dolor sit amet consectetur adipisicing elit Eius, iusto! Aliquam, corporis.",
-            "kategori": "design",
-            "link": "https://mmirzafahlefi.netlify.app"
-        },
-        {
-            "image": "2.jpg",
-            "judul": "Landing Page",
-            "deskripsi": "Lorem ipsum dolor sit amet consectetur adipisicing elit Eius, iusto! Aliquam, corporis.",
-            "kategori": "book",
-            "link": "https://mmirzafahlefi.netlify.app"
-        },
-        {
             "image": "3.jpg",
-            "judul": "Landing Page",
-            "deskripsi": "Lorem ipsum dolor sit amet consectetur adipisicing elit Eius, iusto! Aliquam, corporis.",
+            "judul": "Website Sekolah",
+            "deskripsi": "Dibuat menggunakan Codeigniter 4",
             "kategori": "web",
-            "link": "https://mmirzafahlefi.netlify.app"
-        },
-        {
-            "image": "4.jpg",
-            "judul": "Landing Page",
-            "deskripsi": "Lorem ipsum dolor sit amet consectetur adipisicing elit Eius, iusto! Aliquam, corporis.",
-            "kategori": "design",
-            "link": "https://mmirzafahlefi.netlify.app"
+            "link": "https://trakteer.id/mmirzafahlefi/"
         }
     ]
 }
